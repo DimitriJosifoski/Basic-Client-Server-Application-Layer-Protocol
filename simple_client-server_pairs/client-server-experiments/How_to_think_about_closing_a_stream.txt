@@ -1,0 +1,60 @@
+
+
+   How to think about closing a stream
+
+
+                            keyboard >
+        out >-------------->  file   >----------> in
+   out.write()             >  pipe   >        in.read()
+   out.close()             > network >        in.close()
+socket.shutdownOutput()                   socket.shutdownInput()
+socket.close()                            socket.close()
+
+
+1) On a pipe, or file, or network connection,
+   suppose we call
+      out.close();
+  or on a network connection, suppose we call
+    socket.shutdownOutput();
+
+  Then what happens to these calls?
+      out.write()
+       in.read()
+
+2) On a pipe, or file, or network connection, or keyboard,
+   suppose we call
+       in.close();
+  or on a network connection, suppose we call
+    socket.shutdownInput();
+
+  Then what happens to these calls?
+       in.read()
+      out.write()
+
+3) On a network connection, suppose we call
+      socket.close()
+   on the sending end of the connection.
+
+  Then what happens to these calls?
+      out.write()
+       in.read()
+
+4) On a network connection, suppose we call
+      socket.close()
+   on the receiving end of the connection.
+
+  Then what happens to these calls?
+       in.read()
+      out.write()
+
+
+In the case of a network connection, here are the answers shutdownInput() and shutdownOutput().
+https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/Socket.html#shutdownInput()
+https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/Socket.html#shutdownOutput()
+
+The documentation on closing a socket does not say much.
+https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/Socket.html#close()
+
+In the case of a closed socket on the sending end, getInputStream() gives an answer.
+https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/net/Socket.html#getInputStream()
+

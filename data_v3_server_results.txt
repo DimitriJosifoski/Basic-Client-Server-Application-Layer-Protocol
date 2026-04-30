@@ -1,0 +1,33 @@
+AdditionServer_v3_Hw4
+SERVER: Process ID number (PID): 17228
+SERVER Hostname: LAPTOP-4VRHMUSL.mshome.net
+SERVER IP address: 172.22.0.1
+SERVER Using port no. 5003
+SERVER online:
+SERVER: Client 1: IP: 127.0.0.1, Port: 57470
+SERVER: Client 1: Expecting 8 requests from the client.
+SERVER: Client 1: Expecting sequence of length 4.
+SERVER: Client 1: Sequence is: 1 2 3 4
+SERVER: Client 1: Message received: sum = 10
+SERVER: Client 1: Expecting sequence of length 5.
+SERVER: Client 1: Sequence is: -1 -2 -3 -4 -5
+SERVER: Client 1: Message received: sum = -15
+SERVER: Client 1: Expecting sequence of length 3.
+SERVER: Client 1: Sequence is: 10 -11 12
+SERVER: Client 1: Message received: sum = 11
+SERVER: Client 1: Expecting sequence of length 9.
+SERVER: Client 1: Sequence is: -1 1 -1 1 -1 1 -1 1 4
+SERVER: Client 1: Message received: sum = 4
+SERVER: Client 1: Expecting sequence of length 1.
+SERVER: Client 1: Sequence is: 156
+SERVER: Client 1: Message received: sum = 156
+SERVER: Client 1: Expecting sequence of length 1.
+SERVER: Client 1: Sequence is: -2001
+SERVER: Client 1: Message received: sum = -2001
+SERVER: Client 1: Expecting sequence of length 0.
+SERVER: Client 1: Sequence is:
+SERVER: Client 1: Message received: sum = 0
+SERVER: Client 1: Expecting sequence of length 4.
+SERVER: Client 1: Sequence is: -2 4 5 -1
+SERVER: Client 1: Message received: sum = 6
+SERVER: Client 1: Closed socket.

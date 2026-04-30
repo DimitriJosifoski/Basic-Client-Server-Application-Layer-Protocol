@@ -1,0 +1,26 @@
+AdditionServer_v2_Hw4
+SERVER: Process ID number (PID): 11632
+SERVER Hostname: LAPTOP-4VRHMUSL.mshome.net
+SERVER IP address: 172.22.0.1
+SERVER Using port no. 5002
+SERVER online:
+SERVER: Client 1: IP: 127.0.0.1, Port: 57394
+SERVER: Client 1: Sequence is: 1 2 3 4
+SERVER: Client 1: Message received: sum = 10
+SERVER: Client 1: Sequence is: 1 2 3 4 5
+SERVER: Client 1: Message received: sum = 15
+SERVER: Client 1: Sequence is: 10 11 12
+SERVER: Client 1: Message received: sum = 33
+SERVER: Client 1: Sequence is: 0
+SERVER: Client 1: Message received: sum = 0
+SERVER: Client 1: Sequence is: 0 0
+SERVER: Client 1: Message received: sum = 0
+SERVER: Client 1: Sequence is: 0 1 2
+SERVER: Client 1: Message received: sum = 3
+SERVER: Client 1: Sequence is: 1000 2000 3000 4000 5000 6000 7000 8000 9000
+SERVER: Client 1: Message received: sum = 45000
+SERVER: Client 1: Sequence is: 10 20 30 40 50
+SERVER: Client 1: Message received: sum = 150
+SERVER: Client 1: Sequence is: 1 2 3 4 5 6 7 8 9 0 9 8 7 6 5 4 3 2 1
+SERVER: Client 1: Message received: sum = 90
+SERVER: Client 1: Closed socket.

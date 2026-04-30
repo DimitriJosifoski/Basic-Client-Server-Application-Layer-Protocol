@@ -1,0 +1,15 @@
+AdditionServer_v2_Hw4
+SERVER: Process ID number (PID): 13468
+SERVER Hostname: 10.36.34.54
+SERVER IP address: 10.36.34.54
+SERVER Using port no. 5002
+SERVER: Error creating network connection.
+java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.Net.bind(Net.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.bind(NioSocketImpl.java:636)
+	at java.base/java.net.ServerSocket.bind(ServerSocket.java:391)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:278)
+	at java.base/java.net.ServerSocket.<init>(ServerSocket.java:171)
+	at AdditionServer_v2_Hw4.main(AdditionServer_v2_Hw4.java:68)
