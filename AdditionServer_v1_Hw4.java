@@ -99,37 +99,32 @@ public class AdditionServer_v1_Hw4 {
                + ": IP: " + clientIP.getHostAddress()
                + ", Port: " + clientPort);
 
-          // Implement the appropriate client/server application layer protocol.
-          try
-          {
-             int seqLength;
-             while (in.hasNextInt()
-                 && (seqLength = in.nextInt()) >= 0)
-             {
-                System.out.println("SERVER: Client " + clientCounter
-                                 + ": Expecting sequence of length " + seqLength + ".");
-                System.out.print("SERVER: Client " + clientCounter + ": Sequence is: ");
-                int sum = 0;
-                for (int i = 0; i < seqLength; ++i)
-                {
-                   final int n = in.nextInt();
-                   sum += n;
-                   System.out.print(n + " ");
-                }
-                System.out.println();
-                System.out.println("SERVER: Client " + clientCounter + ": Message received: sum = " + sum);
-                out.println(sum);
-                out.flush();
-             }
-             socket.close();
-             System.out.println("SERVER: Client " + clientCounter + ": Closed socket.");
-          }
-          catch (IOException e)
-          {
-             System.out.println("SERVER: Error communicating with client (Client no. " + clientCounter + ")");
-             System.out.println( e );
-          }
+         // Implement the appropriate client/server application layer protocol.
+         try {
+            int seqLength;
+            while (in.hasNextInt()
+                  && (seqLength = in.nextInt()) >= 0) {
+               System.out.println("SERVER: Client " + clientCounter
+                     + ": Expecting sequence of length " + seqLength + ".");
+               System.out.print("SERVER: Client " + clientCounter + ": Sequence is: ");
+               int sum = 0;
+               for (int i = 0; i < seqLength; ++i) {
+                  final int n = in.nextInt();
+                  sum += n;
+                  System.out.print(n + " ");
+               }
+               System.out.println();
+               System.out.println("SERVER: Client " + clientCounter + ": Message received: sum = " + sum);
+               out.println(sum);
+               out.flush();
+            }
+            socket.close();
+            System.out.println("SERVER: Client " + clientCounter + ": Closed socket.");
+         } catch (IOException e) {
+            System.out.println("SERVER: Error communicating with client (Client no. " + clientCounter + ")");
+            System.out.println(e);
+         }
 
-       }
-    }
+      }
+   }
 }
